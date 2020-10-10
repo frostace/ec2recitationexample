@@ -4,7 +4,7 @@ import json
 c_info = {
         "host": "ec2simplerdb.ckkqqktwkcji.us-east-1.rds.amazonaws.com",
         "user": "dbuser",
-        "password": "dbuserdbuser",
+        "password": "xxxxxxxxxxxx",
         "cursorclass": pymysql.cursors.DictCursor,
     }
 
