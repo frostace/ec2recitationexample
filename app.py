@@ -31,7 +31,7 @@ application = Flask(__name__)
 @application.route("/health", methods=["GET"])
 def health_check():
 
-    rsp_data = { "status": "healthy", "time": str(datetime.now()) }
+    rsp_data = { "status": "healthy", "location": "EC2", "time": str(datetime.now()) }
     rsp_str = json.dumps(rsp_data)
     rsp = Response(rsp_str, status=200, content_type="application/json")
     return rsp
