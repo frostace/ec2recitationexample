@@ -2,14 +2,14 @@ import pymysql
 import json
 import os
 
-print("Environment = ", os.environ)
+# print("Environment = ", os.environ)
 
 pw = os.environ['dbpw']
 
 print("Environment = ", os.environ['dbpw'])
 
 c_info = {
-        "host": "ec2simplerdb.ckkqqktwkcji.us-east-1.rds.amazonaws.com",
+        "host": "ec2simpledb.c5juyujlj64h.us-east-1.rds.amazonaws.com",
         "user": "dbuser",
         "password": pw,
         "cursorclass": pymysql.cursors.DictCursor,
